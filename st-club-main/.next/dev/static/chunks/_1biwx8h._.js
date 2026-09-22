@@ -178,7 +178,8 @@ function About() {
                     opacity: 1
                 },
                 viewport: {
-                    amount: .4
+                    amount: .4,
+                    once: true
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$image__copy$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$image__copy$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
@@ -291,7 +292,8 @@ function Banner() {
                 initial: "hidden",
                 whileInView: "visible",
                 viewport: {
-                    amount: .5
+                    amount: .5,
+                    once: true
                 },
                 className: "flex flex-wrap gap-3 justify-center",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$assets$2f$assets$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["verseArray"].map((verse, i)=>{
@@ -542,13 +544,10 @@ function Memories() {
     };
     const imgVariant = {
         hidden: {
-            scaleY: 0
+            opacity: 0
         },
         visible: {
-            scaleY: 1
-        },
-        style: {
-            transformOrigin: "top"
+            opacity: 1
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -556,7 +555,7 @@ function Memories() {
         initial: "hidden",
         whileInView: "visible",
         viewport: {
-            amount: .4,
+            amount: .1,
             once: true
         },
         className: ` py-10 px-5 md:px-20 gap-2.5  `,
@@ -566,7 +565,7 @@ function Memories() {
                 children: "  ذكرياتنا "
             }, void 0, false, {
                 fileName: "[project]/app/components/home/Memories.tsx",
-                lineNumber: 44,
+                lineNumber: 41,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -583,12 +582,12 @@ function Memories() {
                             className: "h-full w-full  object-cover"
                         }, void 0, false, {
                             fileName: "[project]/app/components/home/Memories.tsx",
-                            lineNumber: 47,
+                            lineNumber: 44,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/home/Memories.tsx",
-                        lineNumber: 46,
+                        lineNumber: 43,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -602,12 +601,12 @@ function Memories() {
                             className: "h-full w-full object-cover"
                         }, void 0, false, {
                             fileName: "[project]/app/components/home/Memories.tsx",
-                            lineNumber: 56,
+                            lineNumber: 53,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/home/Memories.tsx",
-                        lineNumber: 55,
+                        lineNumber: 52,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -621,12 +620,12 @@ function Memories() {
                             className: "h-full w-full object-cover"
                         }, void 0, false, {
                             fileName: "[project]/app/components/home/Memories.tsx",
-                            lineNumber: 65,
+                            lineNumber: 62,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/home/Memories.tsx",
-                        lineNumber: 64,
+                        lineNumber: 61,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -640,12 +639,12 @@ function Memories() {
                             className: "h-full w-full object-cover"
                         }, void 0, false, {
                             fileName: "[project]/app/components/home/Memories.tsx",
-                            lineNumber: 74,
+                            lineNumber: 71,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/home/Memories.tsx",
-                        lineNumber: 73,
+                        lineNumber: 70,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -659,24 +658,24 @@ function Memories() {
                             className: "h-full w-full object-cover"
                         }, void 0, false, {
                             fileName: "[project]/app/components/home/Memories.tsx",
-                            lineNumber: 83,
+                            lineNumber: 80,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/home/Memories.tsx",
-                        lineNumber: 82,
+                        lineNumber: 79,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/home/Memories.tsx",
-                lineNumber: 45,
+                lineNumber: 42,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/home/Memories.tsx",
-        lineNumber: 37,
+        lineNumber: 34,
         columnNumber: 9
     }, this);
 }

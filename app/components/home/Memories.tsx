@@ -23,13 +23,10 @@ export default function Memories() {
     };
     const imgVariant: Variants = {
         hidden: {
-            scaleY:0
+            opacity:0
         },
         visible: {
-            scaleY:1,
-        },
-        style: {
-            transformOrigin:"top"
+            opacity:1,
         }
         
     };
@@ -38,7 +35,7 @@ export default function Memories() {
             variants={wrraperVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: .4 ,  once:true}}
+            viewport={{ amount: .1 ,  once:true}}
             className={` py-10 px-5 md:px-20 gap-2.5  `}
         >
             <h3 className={`p-3 text-3xl rounded-3xl  border border-blue-600 w-fit text-blue-600 `}>  ذكرياتنا </h3>

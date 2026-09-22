@@ -49,7 +49,7 @@ export default function Banner() {
                 variants={versevariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{amount:.5}}
+                viewport={{amount:.5 , once:true}}
                 className='flex flex-wrap gap-3 justify-center'
             >
                 {
