@@ -21,7 +21,6 @@ export default async function ViewProfile({ params }:{params:Promise<{id:string}
         }
     }
     const currentProfile = await getUser()
-    console.log (currentProfile)
     if(!currentProfile){
         return <h4>profile not found</h4>
     }
