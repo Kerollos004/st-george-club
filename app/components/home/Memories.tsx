@@ -10,15 +10,13 @@ import { motion  , Variants} from 'motion/react'
 export default function Memories() {
     const wrraperVariants: Variants = {
         hidden: {
-            scaleY:0
+            opacity:0
         },
         visible: {
-            scaleY:1,
+            opacity:1,
             transition:{duration:.5 , type:"spring" , stiffness:300 , delayChildren:.2 , staggerChildren:.4}
         },
-        style: {
-            transformOrigin:"top"
-        }
+
         
     };
     const imgVariant: Variants = {
