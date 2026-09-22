@@ -29,7 +29,7 @@ return (
         <motion.div className=""
             initial={{x:-200 , opacity:0}}
             whileInView={{x:0 , opacity:1}}
-            viewport={{amount:.4}}
+            viewport={{amount:.4 ,  once:true}}
         >
             <motion.div
                 variants={aboutvariants}

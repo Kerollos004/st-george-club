@@ -15,7 +15,7 @@ export default function Footer() {
             
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ amount: .3 }}
+            viewport={{ amount: .3  , once:true}}
             transition={{duration:1}}
             className={`   py-10 px-2.5 md:px-20 grid grid-cols-1 md:grid-cols-4 text-center gap-2.5 border-t-4 border-blue-600 ${theme==="light"?"bg-gray-200 text-black":"bg-gray-800 text-white"} `}
         >
@@ -38,9 +38,6 @@ export default function Footer() {
                     </li>
                     <li>
                         <Link className='text-2xl  mb-1 inline-block hover:text-blue-600 hover:translate-x-1' href={"/subs"}> الباقات المتاحه </Link>
-                    </li>
-                    <li>
-                        <Link className='text-2xl  mb-1 inline-block hover:text-blue-600 hover:translate-x-1' href={"/viewprofile"}> الصفحه الشخصيه </Link>
                     </li>
                 </ul>
 

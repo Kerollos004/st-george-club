@@ -38,7 +38,7 @@ export default function Memories() {
             variants={wrraperVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: .4 }}
+            viewport={{ amount: .4 ,  once:true}}
             className={` py-10 px-5 md:px-20 gap-2.5  `}
         >
             <h3 className={`p-3 text-3xl rounded-3xl  border border-blue-600 w-fit text-blue-600 `}>  ذكرياتنا </h3>

@@ -32,7 +32,7 @@ export default function Banner() {
         <motion.div
             initial={{ scaleY: 0 }}
             whileInView={{ scaleY: 1 }}
-            viewport={{ amount: .5 }}
+            viewport={{ amount: .5 ,  once:true }}
             style={{transformOrigin:"top"}}
             dir='rtl'
             className="w-full h-[70vh] px-5 md:px-20 flex items-center justify-center relative"
