@@ -57,7 +57,7 @@ export default function DasboardMember({ member }: { member: MemberType }) {
                 }} className={`p-3 text-white rounded-2xl ${activeState ? "bg-green-700" : "bg-red-700"}`}>
                     {activeState ? "إلغاء التفعيل" : "تفعيل"}
                 </button>
-                <Link  className='p-3 rounded-2xl bg-blue-600 hover:bg-blue-800'  href={`/}`}> معاينه </Link>
+                <Link  className='p-3 rounded-2xl bg-blue-600 hover:bg-blue-800'  href={`/`}> معاينه </Link>
             </div>
         </div>
     )
