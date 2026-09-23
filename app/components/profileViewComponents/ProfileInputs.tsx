@@ -49,7 +49,9 @@ export default function ProfileInputs({ member }: { member: MemberType }) {
         const fetchPlans = async () => {
             try {
                 const results = await getAllPlans()
-                setAllSubs(results )
+                if (results) {
+                    setAllSubs(results )
+                }
             } catch (err) {
                 console.error("❌ خطأ في جلب الباقات:", err)
             }
@@ -237,9 +239,9 @@ export default function ProfileInputs({ member }: { member: MemberType }) {
                         className='p-2 w-full text-[17px] rounded-2xl border border-blue-600 focus:outline-none focus:border-blue-800 text-black'
                     >
                         <option value="">اختر الباقة</option>
-                        {allSubs.map((sub) => (
+                        {allSubs?.map((sub) => (
                             <option key={sub.id} value={sub.id}>
-                                {sub.name.replace("_", " ")}
+                                {sub.name?sub.name.replace("_", " "):""}
                             </option>
                         ))}
                     </select>

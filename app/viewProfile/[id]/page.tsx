@@ -2,7 +2,7 @@ import React from 'react';
 import ProfileInputs from "../../components/profileViewComponents/ProfileInputs";
 import ProfileData from '@/app/components/profileViewComponents/ProfileData';
 
-export default async function ViewProfilePage({ params }: { params: Promise<{ id: string }> }) {
+export default async function page({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
 
     const getUser = async () => {
